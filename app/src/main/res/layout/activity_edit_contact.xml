@@ -1,0 +1,132 @@
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        tools:context=".Contact">
+
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:contentDescription="@string/image"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:onClick="Capture"
+            app:srcCompat="@drawable/add_photo" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/first_name"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/last_name"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/company"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/phone"
+            android:padding="10dp"
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/email"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/url"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/address"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/birthday"
+            android:padding="10dp"
+            android:inputType="date"/>
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/nickname"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/fb_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/fb_profile"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/twitter_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/twitter_profile"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/skype"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/skype"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/youtube_channel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/youtube_channel"
+            android:padding="10dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:id="@+id/save_value"
+            android:text="@string/save_value"
+            android:onClick="onSave"/>
+    </LinearLayout>
+</ScrollView>
