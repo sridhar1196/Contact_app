@@ -20,4 +20,12 @@
     <string name="youtube_channel">YouTube Channel</string>
     <string name="save_value">Save</string>
     <string name="image">Image</string>
+    <string name="emaildisplay">Email :</string>
+    <string name="companyDisplay" >Company :</string>
+    <string name="birthdayDisplay">Birthday :</string>
+    <string name="urlDisplay">URL :</string>
+    <string name="fbDisplay">Facebook :</string>
+    <string name="twitDisplay">Twitter :</string>
+    <string name="skyDisplay">Skype :</string>
+    <string name="youDisplay">Youtube :</string>
 </resources>

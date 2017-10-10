@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -63,6 +62,7 @@ public class Contact extends AppCompatActivity {
             if(resultCode == RESULT_OK){
                 Log.d("demo","Contact");
                 contacts.add((Contact_list) data.getParcelableExtra(NEW_CONTACT_DATA));
+                Collections.sort(contacts);
             }
         } else if(requestCode == EDIT_CONTACT){
             if(resultCode == RESULT_OK){

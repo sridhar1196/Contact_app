@@ -84,8 +84,7 @@
             android:layout_height="50dp"
             android:layout_margin="20dp"
             android:hint="@string/birthday"
-            android:padding="10dp"
-            android:inputType="date"/>
+            android:padding="10dp" />
         <EditText
             android:id="@+id/nickname"
             android:layout_width="match_parent"

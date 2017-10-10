@@ -84,8 +84,7 @@
         android:padding="10dp"
         android:clickable="true"
         android:hint="@string/birthday"
-        android:focusable="false"
-        android:inputType="date"/>
+        android:focusable="false" />
     <EditText
         android:id="@+id/nickname"
         android:layout_width="match_parent"

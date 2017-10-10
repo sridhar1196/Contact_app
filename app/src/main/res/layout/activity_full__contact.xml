@@ -1,9 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sridh.contacts.Full_Contact">
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_display_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        tools:context="com.bpothina.contacts.DisplayContact">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="25dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="33dp"
+            android:id="@+id/name" />
+
+        <TextView
+            android:text="@string/emaildisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:text="@string/companyDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignStart="@+id/Email"
+            android:id="@+id/company" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/Email"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignStart="@+id/phone" />
+
+        <TextView
+            android:text="@string/birthdayDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignStart="@+id/company"
+            android:id="@+id/birthday" />
+
+        <TextView
+            android:text="@string/urlDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp"
+            android:id="@+id/textView12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView12"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:layout_alignStart="@+id/birthday"
+            android:id="@+id/url" />
+
+        <TextView
+            android:text="@string/fbDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView14"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:layout_alignStart="@+id/url"
+            android:id="@+id/fb" />
+
+        <TextView
+            android:text="@string/twitDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="31dp"
+            android:id="@+id/textView17" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView17"
+            android:onClick="onClick"
+            android:layout_alignStart="@+id/fb"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/twitter" />
+
+        <TextView
+            android:text="@string/skyDisplay"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="27dp"
+            android:id="@+id/textView19"
+            android:layout_alignEnd="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView19"
+            android:layout_alignStart="@+id/twitter"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:id="@+id/skype" />
+
+        <TextView
+            android:text="@string/youDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView19"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView21" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_alignStart="@+id/skype"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/youtube" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/phone"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignStart="@+id/name" />
+
+    </RelativeLayout>
+</ScrollView>

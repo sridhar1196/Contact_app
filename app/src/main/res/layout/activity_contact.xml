@@ -10,7 +10,8 @@
         android:id="@+id/create_new"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
         android:text="@string/create_new"
         android:onClick="Contact_create"/>
 
@@ -19,14 +20,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="Contact_display"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/edit_contact" />
 
     <Button
         android:id="@+id/delete_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:onClick="Contact_display"
         android:text="@string/delete_contact" />
 
@@ -35,14 +36,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="Contact_display"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/disp_contact" />
 
     <Button
         android:id="@+id/finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/finish"
         android:onClick="Contact_exit"/>
 </LinearLayout>

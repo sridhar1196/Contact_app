@@ -10,17 +10,20 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
         android:id="@+id/defaultImage" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
         android:orientation="vertical">
         <TextView
             android:id="@+id/firstLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:paddingBottom="5dp" />
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp" />
         <TextView
             android:id="@+id/phoneNumber"
             android:layout_width="wrap_content"
